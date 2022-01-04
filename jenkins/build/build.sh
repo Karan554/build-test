@@ -4,7 +4,7 @@
 
 WORKSPACE=/var/jenkins_home/workspace/Pipeline-project
 
-cp -f $WORKSPACE/java-app/target/*.jar $WORKSPACE/jenkins/build/
+cp -f /java-app/target/*.jar /jenkins/build/
 
 echo "****************************"
 echo "** Building Docker Image ***"
