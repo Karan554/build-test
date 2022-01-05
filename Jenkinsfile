@@ -12,7 +12,7 @@ pipeline {
             steps {
                 sh "chmod +x -R ${env.WORKSPACE}"
                 sh '''
-                    ./jenkins/build/mvn.sh mvn clean -B -DskipTests package
+                    ./jenkins/build/mvn.sh mvn -X clean -B -DskipTests package
                     ./jenkins/build/build.sh
 
                 '''
